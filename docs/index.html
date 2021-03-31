@@ -5,35 +5,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Egy minőségi magyar bot.">
     <title>Oxygen | Kezdőlap</title>
     <link rel="stylesheet" href="css/app.css">
-    <link rel="import" href="component.html">
 </head>
 
 <body>
-    <div id="particles-js">
-        <div class="box">
-            <h1 class="title">Oxygen</h1>
-            <h2 class="subtitle">Egy minőségi magyar bot.</h2>
-            <div class="btn-container">
-                <button class="btn-title"
-                    onclick="window.location = 'https://discord.com/api/oauth2/authorize?client_id=826784136097431643&permissions=8&scope=bot'">Bot
-                    meghívása</button>
-                <button class="btn-title" onclick="scrolls('#about')">Tudj meg többet</button>
+    <section class="home">
+        <div id="particles-js">
+            <div class="box">
+                <h1 class="title">Oxygen</h1>
+                <h2 class="subtitle">Egy minőségi magyar bot.</h2>
+                <div class="btn-container">
+                    <button class="btn-title"
+                        onclick="window.location = 'https://discord.com/api/oauth2/authorize?client_id=826784136097431643&permissions=8&scope=bot'">Bot
+                        meghívása</button>
+                    <button class="btn-title" onclick="scrolls('#about')">Tudj meg többet</button>
+                </div>
             </div>
         </div>
-    </div>
-    <section class=" home">
-
     </section>
     <section id="about">
 
     </section>
     <section id="stats">
-
+        <h1 class="title">Statisztikák</h1>
+        <div class="counter-container">
+            <div class="counter" id="command-counter">
+                <div class="icon">
+                    <i class="fas fa-wrench fa-3x"></i>
+                </div>
+                <div class="count">
+                    <b id="command-count">123</b>
+                    <p>Parancs</p>
+                </div>
+            </div>
+            <div class="counter" id="guild-counter">
+                <div class="icon">
+                    <i class="fas fa-server fa-3x"></i>
+                </div>
+                <div class="count">
+                    <b id="guild-count">56743</b>
+                    <p>Szerver</p>
+                </div>
+            </div>
+            <div class="counter" id="user-counter">
+                <div class="icon">
+                    <i class="fas fa-user fa-3x"></i>
+                </div>
+                <div class="count">
+                    <b id="user-count">736573</b>
+                    <p>Felhasználó</p>
+                </div>
+            </div>
+        </div>
     </section>
     <script src="js/particles.min.js"></script>
     <script src="js/scrolls.min.js"></script>
+    <script src="https://kit.fontawesome.com/12afa4c5cf.js" crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
 </body>
 
