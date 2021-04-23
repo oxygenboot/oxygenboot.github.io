@@ -33,6 +33,14 @@ html {
     font-weight: 200;
 }
 
+.footer {
+    background-color: #000;
+    width:auto;
+    height: 150px;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
 .box {
     position: absolute;
     left: 50%;
